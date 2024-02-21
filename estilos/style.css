@@ -42,3 +42,27 @@ iframe#tela {
     width: 267px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right;
+
+}
+
+section#redes-sociais a img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.317);
+    /* O parãmetro "border-sizing: border-box;" faz com que a borda faça parte da caixa */
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.751);
+    /* O prâmetro "transform: translate();" no ":hover" permite editar quanto a caixa vai se mover ao passamos o cursor pro cima da mesma */
+    /* Neste caso "-3px" para esqyerda e "-3px" para cima */
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    /* O parãmetro "transition: transform 0.5s;" me permite adicionar um pequeno delay de animação na caixa selecionada */
+    transition: transform 0.5s, border 0.5s;
+}
